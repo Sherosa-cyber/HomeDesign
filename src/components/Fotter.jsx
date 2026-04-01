@@ -42,15 +42,15 @@ const Footer = () => {
           </div>
 
           {/* Column 3 - Social Media */}
-          <div className="col-md-4 mb-4">
-            <h5>Follow Us</h5>
+          <div className="col-md-4">
+            <h4>Follow Us</h4>
 
-            <div className="d-flex gap-3 fs-4 text-center">
+            <div className=" text-center">
              <p>Facebook</p><br />
-             <img src="/home/user/Downloads/images/fb.png" alt="" /> <br />
+             <img src="/images/fb.png" alt=""  id="Facebook"/> <br />
 
              <p>Instagram</p><br />
-             <img src="/home/user/Downloads/images/in.png" alt="" /> <br />
+             <img src="/images/in.png" alt="" /> <br />
 
              <p>X</p>
 
@@ -63,7 +63,10 @@ const Footer = () => {
 
         </div>
       </div>
+      
     </footer>
+    
+    
   );
 };
 
