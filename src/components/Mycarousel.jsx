@@ -1,5 +1,3 @@
-
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
@@ -8,79 +6,84 @@ const Mycarousel = () => {
     <div className="container mt-4">
       <div className="row">
         <div className="col-md-10 mx-auto">
-            <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
-       
-        {/* Indicators */}
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
-        </div>
 
-        {/* Slides */}
-        <div className="carousel-inner">
+          <div
+            id="carouselExample"
+            className="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="7000"
+            data-bs-pause="hover"
+          >
 
-          <div className="carousel-item active">
-            <img
-              src="images/image3.jpg"
-              className="d-block w-100"
-              alt="First slide"
-              height="450px"
-            />
-            <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
-              <h5>The Royal Comfort Bed Set.</h5>
-              <p></p>
+            {/* Indicators */}
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
             </div>
+
+            {/* Slides */}
+            <div className="carousel-inner">
+
+              <div className="carousel-item active">
+                <img
+                  src="images/image3.jpg"
+                  className="d-block w-100"
+                  alt="First slide"
+                  height="450px"
+                />
+                <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
+                  <h5>The Royal Comfort Bed Set.</h5>
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <img
+                  src="images/image2.jpg"
+                  className="d-block w-100"
+                  alt="Second slide"
+                  height="450px"
+                />
+                <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
+                  <h5>This is Imperial Lounge Collection.</h5>
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <img
+                  src="images/image1.jpg"
+                  className="d-block w-100"
+                  alt="Third slide"
+                  height="450px"
+                />
+                <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
+                  <h5>This is Luxury Haven Living Set.</h5>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Controls */}
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span className="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span className="carousel-control-next-icon"></span>
+            </button>
+
           </div>
 
-          <div className="carousel-item">
-            <img
-              src="images/image2.jpg"
-              className="d-block w-100"
-              alt="Second slide"
-              height="450px"
-            />
-            <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
-              <h5>This is Imperial Lounge Collection.</h5>
-              <p></p>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img
-              src="images/image1.jpg"
-              className="d-block w-100"
-              alt="Third slide"
-              height="450px"
-            />
-            <div className="carousel-caption d-none d-md-block bg-dark opacity-50">
-              <h5>This is Luxury Haven Living Set.</h5>
-              <p></p>
-            </div>
-          </div>
-
-        </div>
-
-        {/* Controls */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon"></span>
-        </button>
-
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon"></span>
-        </button>
-
-      </div>
         </div>
       </div>
     </div>

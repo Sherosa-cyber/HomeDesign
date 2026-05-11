@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Signin= () => {
   //declarering satate varaibles
@@ -60,9 +60,7 @@ const Signin= () => {
         </form>
         </div>  
 
-         <footer class="text-light bg-dark text-center p-2">
-                    <h5> <marquee behavior="" direction="">Developed by Sherosa &copy ;2026.All rights reserved for more infomation visit the "About tab"</marquee> </h5>
-                  </footer>
+         
     </div>
   )
 }

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Addfurnishings = () => {
+const Uploadfurniture = () => {
   //declaring state variables
   const[product_name,setProductName]=useState("")
   const[product_description,setProductDescription]=useState("")
@@ -77,11 +77,9 @@ const Addfurnishings = () => {
 
         </form>
       </div>
-       <footer class=" backgroundcolor text-light bg-dark text-center p-2">
-                    <h5> <marquee behavior="" direction="">Developed by Sherosa &copy ;2026.All rights reserved for more infomation visit the "About tab"</marquee> </h5>
-                  </footer>
+       
     </div>
   )
 }
 
-export default Addfurnishings
+export default Uploadfurniture

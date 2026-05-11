@@ -1,74 +1,93 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import {BrowserRouter as Router,Routes,Route,Link}from 'react-router-dom'
-import Getfurnishings from './components/Getfurnishings';
-import Addfurnishings from './components/Addfurnishings';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Mpesapayment from './components/Mpesapayment';
 import Footer from './components/Fotter';
-import { Component as images } from 'react';
+import Cartitems from './components/Cartitems'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Furniturehub from './components/Furniturehub';
+import Uploadfurniture from './components/Uploadfurniture';
+import Aboutus from './components/Aboutus';
+import { HousePlus } from 'lucide-react';
+import { LogIn } from 'lucide-react';
+import { UserLock } from 'lucide-react';
+import { LayersPlus } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
+import { BookCheck } from 'lucide-react';
+
+
+
 function App() {
   return (
     <Router>
     <div className="App">
-      <div className='App-header'>
-        <h1 className='text-dark'>Welcome To <i> Homedesigns</i></h1>
-      </div>
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      
+<nav
+  className="navbar navbar-expand-md navbar-dark luxury-navbar"
+>
 
-      {/* Brand */}
-      <Link to="/" className="navbar-brand fw-bold mx-auto">
-        Furnishings
-      </Link>
+  {/* BRAND (LOGO + NAME + GLOW) */}
+  <Link
+    to="/"
+    className="navbar-brand d-flex align-items-center gap-2 brand-glow"
+  >
 
-      {/* Toggle Button */}
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarcollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+    {/* Logo */}
+    <div className="logo-box">
+      🪑
+    </div>
 
-      {/* Nav Links */}
-      <div
-        className="collapse navbar-collapse justify-content-center"
-        id="navbarcollapse"
-      >
-        <div className="navbar-nav text-center">
+    {/* Brand Name */}
+    <span className="brand-text">
+      Furniture Hub
+    </span>
 
-          <Link to="/signup" className="nav-link fw-bold text-dark">
-            Signup
-          </Link>
+  </Link>
 
-          <Link to="/signin" className="nav-link fw-bold text-dark">
-            Signin
-          </Link>
+  {/* Toggle Button */}
+  <button
+    className="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarcollapse"
+  >
+    <span className="navbar-toggler-icon"></span>
+  </button>
 
-          <Link to="/" className="nav-link fw-bold text-dark">
-            Get Furnishings
-          </Link>
+  {/* Nav Links */}
+  <div
+    className="collapse navbar-collapse justify-content-center"
+    id="navbarcollapse"
+  >
+    <div className="navbar-nav text-center gap-3">
 
-          <Link to="/Addfurnishings" className="nav-link fw-bold text-dark">
-            Add Furnishings
-          </Link>
+      <Link className="lux-link" to="/">Home <HousePlus/> </Link>
+      <Link className="lux-link" to="/signup">Signup <LogIn/> </Link>
+      <Link className="lux-link" to="/signin">Signin <UserLock/> </Link>
+      <Link className="lux-link" to="/Uploadfurniture">Upload Furniture <LayersPlus/> </Link>
+      <Link className="lux-link" to="/Cartitems">Cart <ShoppingCart/> </Link>
+      <Link className="lux-link" to="/Aboutus">About Us <BookCheck/> </Link>
 
-        </div>
-      </div>
 
-    </nav>
+    </div>
+  </div>
 
+</nav>
        <br />
       <Routes>
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Signin' element={<Signin/>}/>
-        <Route path='/' element={<Getfurnishings/>}/>
-        <Route path='/Addfurnishings' element={<Addfurnishings/>}/>
+        <Route path='/' element={<Furniturehub/>}/>
+        <Route path='/Uploadfurniture' element={<Uploadfurniture/>}/>
         <Route path='/makepayment' element={<Mpesapayment/>}/>
+        <Route path='/Cartitems' element={<Cartitems/>}/>
+        <Route path='/Aboutus' element={<Aboutus/>}/>
+
+        
+        
       </Routes>
       <Footer/>
       <images/>

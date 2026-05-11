@@ -60,3 +60,186 @@
 #facebook{
   text-align: center;
 }
+/* DARK SEARCH CONTAINER */
+.dark-search-container {
+  width: 40%;
+}
+
+/* DARK SEARCH INPUT */
+.dark-search-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* PLACEHOLDER COLOR */
+.dark-search-input::placeholder {
+  color: #bbb;
+}
+
+/* FOCUS EFFECT */
+.dark-search-input:focus {
+  border-color: #555;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+/* PRODUCT CARD */
+.product-card{
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* DESKTOP HOVER */
+.product-card:hover{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* MOBILE TOUCH EFFECT */
+.product-card:active{
+  transform: scale(0.97);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.product_img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  transition: 0.4s ease;
+  border-radius: 10px;
+}
+
+/* IMAGE HOVER */
+.product-card:hover .product_img{
+  transform: scale(1.08);
+}
+
+/* IMAGE TOUCH */
+.product-card:active .product_img{
+  transform: scale(1.03);
+}
+
+/* 🖤 Navbar base */
+.luxury-navbar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  padding: 12px 20px;
+}
+
+/* 🪑 Logo box */
+.logo-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.3s ease;
+}
+
+/* ✨ Glow effect */
+.brand-glow:hover .logo-box {
+  box-shadow: 0 0 12px rgba(255,255,255,0.4),
+              0 0 25px rgba(255,255,255,0.15);
+  transform: scale(1.05);
+}
+
+/* 🏷️ Brand text */
+.brand-text {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #d6d0c9;
+  transition: 0.3s ease;
+}
+
+/* hover brand text */
+.brand-glow:hover .brand-text {
+  color: #ffffff;
+}
+
+/* 🔗 Navigation links */
+.lux-link {
+  color: #cfc7bf !important;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* ✨ underline animation */
+.lux-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+}
+
+.lux-link:hover::after {
+  width: 70%;
+}
+
+.lux-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255,255,255,0.05);
+}
+.about-card {
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255,255,255,0.06);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cfc7bf;
+  line-height: 1.6;
+}
